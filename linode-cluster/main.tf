@@ -32,7 +32,7 @@ resource "linode_instance" "fillipe_qa_instance" {
   provisioner "remote-exec" {
     inline = [
       "sudo apt update",
-      "sudo curl https://releases.rancher.com/install-docker/26.0.sh | sh"
+      "sudo curl https://releases.rancher.com/install-docker/27.1.sh | sh"
     ]
   }
 }
